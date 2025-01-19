@@ -24,17 +24,33 @@
 ## **데이터 출처:**
 [https://www.kaggle.com/datasets/joshuanaude/effects-of-alcohol-on-student-performance]
 
-## **데이터 개요: **
+## **데이터 개요:**
 이 데이터는 학생들의 음주 습관과 학업 성취 간의 상관관계를 탐구하고, 음주가 학습 성과에 미치는 잠재적 영향을 파악할 목적으로 수집된 데이터이다.  
 2024년에 진행된 설문조사의 응답들로 구성되어 있으며, 2023년의 학생 정보를 담고 있다.
 
 ## **데이터 속성:**
+| **Column**                                         | **번역 (한글)**                         | **의미**                                | **데이터 타입** | **응답**                                                                                                                                                                   | **비고**                                    |
+|---------------------------------------------------|-----------------------------------------|-----------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| Timestamp                                         | 타임스탬프                              | 설문 제출 시간                          | object          |                                                                                                                                                                          |                                            |
+| Your Sex?                                         | 당신의 성별은?                          | 성별                                    | object          | 'Female', 'Male'                                                                                                                                                         |                                            |
+| Your Matric (grade 12) Average/ GPA (in %)       | 고등학교(12학년) 평균/학점(%)           | 고등학교 성적                          | float64         | (0~100)                                                                                                                                                                 |                                            |
+| What year were you in last year (2023) ?         | 작년(2023년)에는 몇 학년에 재학 중이었나요? | 2023년 재학 학년                        | object          | '1st Year', '2nd Year', '3rd Year', '4th Year', 'Postgraduate'                                                                                                          |                                            |
+| What faculty does your degree fall under?        | 전공 학부는 무엇인가요?                 | 전공 학부                               | object          | 'Arts & Social Sciences', 'Economic & Management Sciences', 'AgriSciences', 'Engineering', 'Science', 'Medicine and Health Services', 'Law', 'Education'              |                                            |
+| Your 2023 academic year average/GPA in %         | 2023년 학업 평균/GPA                    | 2023년 성적                             | float64         | (0~100)                                                                                                                                                                 | (2024년 신입생은 해당 없음)               |
+| Your Accommodation Status Last Year (2023)       | 작년(2023년)의 거주 상태는?             | 거주지                                  | object          | 'Private accommodation/ stay with family/friends', 'Non-private accommodation i.e., Res'                                                                               |                                            |
+| Monthly Allowance in 2023                        | 2023년 월간 용돈은?                     | 월간 용돈 수준                          | object          | 'R 4001- R 5000', 'R 7001 - R 8000', 'R 6001 - R 7000', 'R 5001 - R 6000', 'R 8000+'                                                                                     | 단위: 남아프리카공화국 (랜드) <br> 1 랜드: 77.79 원 |
+| Were you on scholarship/bursary in 2023?         | 2023년에 장학금을 받았나요?             | 장학금 수령 여부                        | object          | 'No', 'Yes (NSFAS, etc...)'                                                                                                                                            |                                            |
+| Additional amount of studying (in hrs) per week  | 주당 추가 공부 시간(시간 기준)          | 주당 공부 시간                          | object          | '0', '1-3', '3-5', '5-8', '8+'                                                                                                                                          |                                            |
+| How often do you go out partying/socialising...  | 주중에 파티나 사교 활동을 얼마나 자주 하나요? | 파티, 사교모임 빈도                     | object          | 'Only weekends', '0', '1', '2', '3', '4+'                                                                                                                              |                                            |
+| On a night out, how many alcoholic drinks...     | 외출 시 술을 몇 잔이나 마시나요?        | 외출 시 음주량                          | object          | '0', '1-3', '3-5', '5-8', '8+'                                                                                                                                          |                                            |
+| How many classes do you miss per week due to...  | 술로 인해 주당 몇 수업을 결석하나요?     | 주당 음주로 인한 결석 수                 | object          | '0', '1', '2', '3', '4+'                                                                                                                                                |                                            |
+| How many modules have you failed thus far...     | 지금까지 몇 개의 과목에서 낙제했나요?   | 낙제 과목 수                            | object          | '0', '1', '2', '3', '4+'                                                                                                                                                |                                            |
+| Are you currently in a romantic relationship?    | 현재 연애 중인가요?                     | 연애여부                                | object          | 'Yes', 'No'                                                                                                                                                             |                                            |
+| Do your parents approve alcohol consumption?     | 부모님은 음주를 허용하시나요?           | 부모 음주 허용 여부                     | object          | 'Yes', 'No'                                                                                                                                                             |                                            |
+| How strong is your relationship with your...     | 부모님과의 관계는 얼마나 가까운가요?    | 부모 친밀도                             | object          | 'Very close', 'Fair', 'Close', 'Distant'                                                                                                                                |                                            |
 
 
 
-
-------
-분석 목표: 음주 습관과 학습 성적 간의 상관 관계를 탐구하고, 음주가 학습 성과에 미치는 잠재적 영향을 파악
 
 ### 데이터 구조:
 **총 데이터 수:**  407개
