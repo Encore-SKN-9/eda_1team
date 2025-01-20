@@ -20,6 +20,9 @@
 
 ### 팀명 : 밸런스(Balance)
 
+학업과 음주의 균형을 탐구한다는 의미를 담음.
+
+
 
 
 <table align=center>
