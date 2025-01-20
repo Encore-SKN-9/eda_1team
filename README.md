@@ -1,4 +1,5 @@
 ## 목차
+0.팀 소개
 
 1. 데이터셋 소개
 
@@ -14,6 +15,33 @@
 
 
 ---
+
+# 0.팀소개
+
+### 팀명 : 밸런스(Balance)
+
+
+
+<table align=center>
+<tbody>
+<tr>
+<td align=center><b>김도연</b></td>
+<td align=center><b>박주은</b></td>
+<td align=center><b>서예찬</b></td>
+
+</tr>
+
+<tr>
+<td><a href="https://github.com/youngseo98"><div align=center>@doyeon158</div></a></td>
+<td><a href="https://github.com/yujitaeng"><div align=center>@pprain1999</div></a></td>
+
+<td><a href="https://github.com/Hack012"><div align=center>@syc9811</div></a></td>
+
+</tr>
+</tbody>
+</table>
+
+<br><br><br>
 
 # 1. 데이터셋 소개
 
